@@ -4,6 +4,8 @@
   "description": "typescript common utils ",
   "main": "index.js",
   "scripts": {
+    "prepare": "husky install",
+    "commitlint": "commitlint --config commitlint.config.js -e -V",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -40,5 +42,8 @@
     "extends": [
       "@commitlint/config-conventional"
     ]
+  },
+  "dependencies": {
+    "lint-staged": "^13.2.2"
   }
 }
