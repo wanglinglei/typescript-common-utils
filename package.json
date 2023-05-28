@@ -13,6 +13,9 @@
     "javascript",
     "utils"
   ],
+  "repository": {
+    "url": "https://github.com/wanglinglei/typescript-common-utils.git"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {

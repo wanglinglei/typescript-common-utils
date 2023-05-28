@@ -64,6 +64,15 @@ function isPromise<T> (int:unknown):int is Promise<T> {
   return isObject(int)&& isFunction(int.then)&&isFunction(int.catch)
 }
 
+/**
+ * @description: get type of intß
+ * @param {any} int
+ * @return {*}
+ */
+function getType(int: any): string {
+  return Object.prototype.toString.call(int).slice(8,-1).toLowerCase();
+}
+
 export {
-  isString,isArray,isBoolean,isFunction,isNumber,isObject,isPromise
+  isString,isArray,isBoolean,isFunction,isNumber,isObject,isPromise,getType
 }
